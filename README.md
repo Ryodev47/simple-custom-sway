@@ -125,4 +125,4 @@ The `.config/` folder mirrors your real `~/.config/` directory 1:1, so installin
 - [JetBrains Mono Nerd Font](https://www.nerdfonts.com/)
 
 ## License
-This project is licensed under the MIT License — feel free to use, modify, and distribute it.
+This project is licensed under the [MIT License](LICENSE) — feel free to use, modify, and distribute it.
