@@ -24,7 +24,6 @@ This repository contains my personal dotfiles for a simple and distraction-free 
 
 ## Preview
 
-> Add your own screenshots here, for example:
 >
 > ```md
 > ![Desktop Screenshot](assets/screenshot-desktop.png)
