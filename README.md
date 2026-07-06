@@ -2,7 +2,6 @@
 
 A clean, minimal, **Sway** desktop configuration featuring a lightweight tiling workflow, a transparent **Waybar** status bar, a black & white **Rofi** launcher, and a translucent **Kitty** terminal.
 
----
 
 ## Overview
 This repository contains my personal dotfiles for a simple and distraction-free Wayland desktop built around [Sway](https://swaywm.org/). It focuses on:
@@ -61,7 +60,11 @@ Make sure the following packages are installed on your system:
    ln -sfn "$(pwd)/.config/kitty"  ~/.config/kitty
    ```
 3. Update the wallpaper path in the Sway config (`output * bg ...`) to point to your own wallpaper.
-4. Reload Sway:
+   > This repo doesn't bundle the wallpaper file itself (to keep the repo lightweight and avoid redistributing someone else's image). The one used in the preview above is from WallpapersDen:
+   > [Sunset Horizon HD Landscape](https://images.wallpapersden.com/image/download/sunset-horizon-hd-landscape_bmdnZWeUmZqaraWkpJRmbmdsrWZlbWU.jpg)
+   >
+   > Download it (or your own wallpaper) and place it somewhere like `~/Pictures/wallpaper/`, then update the path in `.config/sway/config`.
+5. Reload Sway:
    ```bash
    swaymsg reload
    ```
