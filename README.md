@@ -114,10 +114,10 @@ The modifier key is set to `Mod4` (Super/Windows key).
 - **Rofi**: Fully monochrome (black background, white text/highlights), rounded corners, and a bottom mode-switcher for `drun`, `run`, and `window` modes.
 - **Waybar**: Transparent bar with capsule-style modules using a Catppuccin-inspired accent palette on a dark, semi-transparent background.
 
-## Suggested Repository Structure
+## Suggested File Structure
 
 ```
-simple-custom-sway/
+~/.config/
 ├── sway/
 │   └── config
 ├── waybar/
