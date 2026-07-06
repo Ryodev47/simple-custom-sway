@@ -147,4 +147,4 @@ The `.config/` folder mirrors your real `~/.config/` directory 1:1, so installin
 
 ## License
 
-This configuration is free to use and modify. Feel free to fork and adapt it to your own workflow.
+This project is licensed under the MIT License — feel free to use, modify, and distribute it.
