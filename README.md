@@ -1,4 +1,4 @@
-# my-simple-custom-sway
+# sway-dotfiles
 
 A clean, minimal, **Sway** desktop configuration featuring a lightweight tiling workflow, a transparent **Waybar** status bar, a black & white **Rofi** launcher, and a translucent **Kitty** terminal.
 
@@ -51,28 +51,29 @@ Make sure the following packages are installed on your system:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/<your-username>/my-simple-custom-sway.git
-   cd my-simple-custom-sway
+   git clone https://github.com/<your-username>/sway-dotfiles.git
+   cd sway-dotfiles
    ```
 
-2. Copy or symlink the configuration files into your `~/.config` directory:
+2. Run the install script to symlink everything into `~/.config`:
 
    ```bash
-   mkdir -p ~/.config/{sway,waybar,rofi,kitty}
-
-   cp -r sway/*    ~/.config/sway/
-   cp -r waybar/*  ~/.config/waybar/
-   cp -r rofi/*    ~/.config/rofi/
-   cp -r kitty/*   ~/.config/kitty/
+   ./install.sh
    ```
 
-   Or, if you prefer symlinks (recommended, so future updates via `git pull` apply automatically):
+   The script backs up any existing config folders (e.g. `sway.bak.<timestamp>`) before creating the symlinks, so it's safe to run even if you already have configs in place.
+
+   Prefer to do it manually? Since the repo's `.config/` folder mirrors your real `~/.config/`, you can just copy or symlink it directly:
 
    ```bash
-   ln -sf "$(pwd)/sway"   ~/.config/sway
-   ln -sf "$(pwd)/waybar" ~/.config/waybar
-   ln -sf "$(pwd)/rofi"   ~/.config/rofi
-   ln -sf "$(pwd)/kitty"  ~/.config/kitty
+   # Copy
+   cp -r .config/* ~/.config/
+
+   # Or symlink (recommended, so `git pull` updates apply automatically)
+   ln -sfn "$(pwd)/.config/sway"   ~/.config/sway
+   ln -sfn "$(pwd)/.config/waybar" ~/.config/waybar
+   ln -sfn "$(pwd)/.config/rofi"   ~/.config/rofi
+   ln -sfn "$(pwd)/.config/kitty"  ~/.config/kitty
    ```
 
 3. Update the wallpaper path in the Sway config (`output * bg ...`) to point to your own wallpaper.
@@ -83,7 +84,7 @@ Make sure the following packages are installed on your system:
    swaymsg reload
    ```
 
-##  Key Bindings (Sway)
+## Key Bindings (Sway)
 
 The modifier key is set to `Mod4` (Super/Windows key).
 
@@ -114,21 +115,26 @@ The modifier key is set to `Mod4` (Super/Windows key).
 - **Rofi**: Fully monochrome (black background, white text/highlights), rounded corners, and a bottom mode-switcher for `drun`, `run`, and `window` modes.
 - **Waybar**: Transparent bar with capsule-style modules using a Catppuccin-inspired accent palette on a dark, semi-transparent background.
 
-## Suggested File Structure
+## Repository Structure
 
 ```
-~/.config/
-├── sway/
-│   └── config
-├── waybar/
-│   ├── config.jsonc
-│   └── style.css
-├── rofi/
-│   └── config.rasi
-├── kitty/
-│   └── kitty.conf
-└── README.md
+sway-dotfiles/
+├── .config/
+│   ├── sway/
+│   │   └── config
+│   ├── waybar/
+│   │   ├── config.jsonc
+│   │   └── style.css
+│   ├── kitty/
+│   │   └── kitty.conf
+│   └── rofi/
+│       └── config.rasi
+├── .gitignore
+├── README.md
+└── install.sh
 ```
+
+The `.config/` folder mirrors your real `~/.config/` directory 1:1, so installing is just a matter of symlinking (or copying) each subfolder into place.
 
 ## Credits
 
