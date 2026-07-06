@@ -1,4 +1,4 @@
-# sway-dotfiles
+# simple-custom-sway
 
 A clean, minimal, **Sway** desktop configuration featuring a lightweight tiling workflow, a transparent **Waybar** status bar, a black & white **Rofi** launcher, and a translucent **Kitty** terminal.
 
@@ -24,10 +24,9 @@ This repository contains my personal dotfiles for a simple and distraction-free 
 
 ## Preview
 
->
-> ```md
-> ![Desktop Screenshot](assets/screenshot-desktop.png)
-> ```
+
+![Desktop Screenshot](assets/screenshot-desktop.png)
+
 
 ## Requirements
 
@@ -50,8 +49,8 @@ Make sure the following packages are installed on your system:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/<your-username>/sway-dotfiles.git
-   cd sway-dotfiles
+   git clone https://github.com/Ryodev47/simple-custom-sway.git
+   cd simple-custom-sway
    ```
 
 2. Run the install script to symlink everything into `~/.config`:
