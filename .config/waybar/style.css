@@ -1,0 +1,133 @@
+/* ~/.config/waybar/style.css */
+
+* {
+    font-family: sans-serif, "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* ===== Container tiap grup modul (kapsul terpisah) ===== */
+#mode,
+#custom-launcher,
+#window,
+#clock,
+#tray,
+#network,
+#pulseaudio,
+#custom-notification,
+#custom-power {
+    background: rgba(24, 24, 27, 0.75);
+    color: #cdd6f4;
+    border-radius: 12px;
+    padding: 0 12px;
+    margin: 4px 3px;
+}
+
+/* ===== Logo Arch Linux ===== */
+#custom-launcher {
+    font-size: 18px;            /* ikon lebih besar sedikit */
+    color: #89b4fa;            /* biru lembut, bisa diganti #1793d1 kalau mau khas Arch */
+    /* padding: 0 24px; */
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+/* ===== Sway mode ===== */
+#mode {
+    color: #1e1e2e;
+    background: #cba6f7;
+    font-weight: 700;
+}
+
+/* ===== Window title ===== */
+#window {
+    color: #a6adc8;
+    font-weight: 500;
+}
+
+/* ===== Clock ===== */
+#clock {
+    color: #89b4fa;
+    font-weight: 700;
+}
+
+/* ===== Workspaces — kapsul sendiri, dot kecil jadi pill saat aktif ===== */
+#workspaces {
+    background: rgba(30, 30, 46, 0.75);
+    border-radius: 12px;
+    padding: 0 8px;
+    margin: 4px 3px;
+}
+
+#workspaces button {
+    all: unset;
+    padding: 0 4px;
+    margin: 3px 3px;
+    color: transparent;
+    background: rgba(53, 49, 49, 0.08);
+    border-radius: 100px;
+    min-width: 12px;
+    min-height: 12px;
+    font-size: 11px;
+    transition: background-color 0.5s ease, color 1s ease;
+}
+
+#workspaces button.focused {
+    background: #89b4fa;
+    color: #1e1e2e;
+    min-width: 40px;
+    border-radius: 100px;
+}
+
+#workspaces button.urgent {
+    background: #f38ba8;
+    color: #1e1e2e;
+}
+
+#workspaces button:hover {
+    background: rgba(203, 166, 247, 0.25);
+    color: #cdd6f4;
+}
+
+/* ==== Tray ==== */
+#tray {
+    padding: 0 10px;
+}
+
+#tray > .passive {
+    opacity: 0.5;
+}
+
+/* ==== Network ==== */
+#network {
+    color: #89b4fa;
+}
+
+#network.disconnected {
+    color: #f38ba8;
+}
+
+/* ==== Audio ==== */
+#pulseaudio {
+    color: #94e2d5;
+}
+
+/* ==== Notification ==== */
+#custom-notification {
+    padding-left: 10px;
+    padding-right: 12px;
+    color: #f9e2af;
+}
+
+/* ==== Power Button ==== */
+#custom-power {
+    padding-left: 10px;
+    padding-right: 12px;
+    color: #f38ba8;
+    transition: color 0.15s ease;
+}
