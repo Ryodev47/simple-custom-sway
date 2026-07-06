@@ -99,7 +99,7 @@ The modifier key is set to `Mod4` (Super/Windows key).
 
 ## Repository Structure
 ```
-sway-dotfiles/
+simple-custom-sway/
 ├── .config/
 │   ├── sway/
 │   │   └── config
