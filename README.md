@@ -32,6 +32,7 @@ Make sure the following packages are installed on your system:
 - `kitty`
 - `autotiling`
 - `swaync` (notification daemon)
+- `swaybg`
 - `wlogout`
 - `grim` + `slurp` (screenshots)
 - `pavucontrol` / `wpctl` (audio control)
