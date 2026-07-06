@@ -22,7 +22,7 @@ This repository contains my personal dotfiles for a simple and distraction-free 
 
 ## Preview
 ![Desktop Screenshot](assets/screenshot-desktop.png)
-
+![Terminal Screenshot](assets/screenshot-terminal.png)
 
 ## Requirements
 Make sure the following packages are installed on your system:
@@ -64,7 +64,7 @@ Make sure the following packages are installed on your system:
    > [Sunset Horizon HD Landscape](https://images.wallpapersden.com/image/download/sunset-horizon-hd-landscape_bmdnZWeUmZqaraWkpJRmbmdsrWZlbWU.jpg)
    >
    > Download it (or your own wallpaper) and place it somewhere like `~/Pictures/wallpaper/`, then update the path in `.config/sway/config`.
-5. Reload Sway:
+4. Reload Sway:
    ```bash
    swaymsg reload
    ```
@@ -110,6 +110,9 @@ simple-custom-sway/
 │   │   └── kitty.conf
 │   └── rofi/
 │       └── config.rasi
+├── assets/
+│   ├── screenshot-desktop.png
+│   └── screenshot-terminal.png
 ├── .gitignore
 ├── README.md
 └── install.sh
